@@ -1,0 +1,34 @@
+{
+  "name": "engine-ruut-not-found",
+  "version": "1.0.0",
+  "description": "Handles 404 links when there are more ruut instances.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jillix/engine-ruut-not-found.git"
+  },
+  "keywords": [
+    "routes",
+    "not-found",
+    "ruut.js"
+  ],
+  "author": "jillix <contact@jillix.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jillix/engine-ruut-not-found/issues"
+  },
+  "homepage": "https://github.com/jillix/engine-ruut-not-found",
+  "composition": {
+    "client": {
+      "module": [
+        "client/index.js"
+      ],
+      "config": {
+        "ruuts": []
+      }
+    }
+  },
+  "main": "index.js"
+}
