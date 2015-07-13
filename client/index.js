@@ -12,6 +12,13 @@ exports.init = function () {
     }
 };
 
+/**
+ * check
+ * This checks if the current pathname is configured in the ruut instances.
+ *
+ * @name check
+ * @function
+ */
 exports.check = function () {
     for (var i = 0; i < this.ruuts.length; ++i) {
         if (this.ruuts[i](location.pathname)) {
