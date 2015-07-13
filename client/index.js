@@ -1,5 +1,4 @@
 exports.init = function () {
-    this.routeNotFound = this.flow("notFound");
     this.ruuts = [];
     for (var i = 0; i < this._config.ruuts.length; ++i) {
         var cIns = engine.instances[this._config.ruuts[i]];
@@ -25,7 +24,7 @@ exports.check = function () {
             return;
         }
     }
-    this.routeNotFound.write(null, {
+    this.flow("notFound").write(null, {
         url: location.pathname
-    });
+    }).end();
 };
